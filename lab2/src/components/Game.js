@@ -72,7 +72,7 @@ class Game extends Component{
         return (
             <div>
                 <h1 align="center">Tic tac toe</h1>
-            <h1 align="center">{status}</h1>
+            <h1 id="status" align="center">{status}</h1>
             <Container>
             <Table striped bordered size="sm">
                         <tr>
