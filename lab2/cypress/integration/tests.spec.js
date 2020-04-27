@@ -4,19 +4,19 @@ describe('The Home Page', function() {
 })
     it('X win test', function() {
 
-        cy.get('td#0')
+        cy.get('button#0')
         .click()
 
-        cy.get('td#1')
+        cy.get('button#1')
         .click()
 
-        cy.get('td#3')
+        cy.get('button#3')
         .click()
 
-        cy.get('td#4')
+        cy.get('button#4')
         .click()
 
-        cy.get('td#6')
+        cy.get('button#6')
         .click()
 
         cy.get('h1#status')
@@ -25,22 +25,22 @@ describe('The Home Page', function() {
 })
 
     it('O win test', function() {
-        cy.get('td#1')
+        cy.get('button#1')
           .click()
 
-        cy.get('td#0')
+        cy.get('button#0')
           .click()
 
-        cy.get('td#4')
+        cy.get('button#4')
           .click()
 
-        cy.get('td#3')
+        cy.get('button#3')
           .click()
 
-        cy.get('td#2')
+        cy.get('button#2')
           .click()
 
-        cy.get('td#6')
+        cy.get('button#6')
           .click()
 
         cy.get('h1#status')
@@ -49,31 +49,31 @@ describe('The Home Page', function() {
 })
 
     it('Draw test', function() {
-        cy.get('td#0')
+        cy.get('button#0')
           .click()
 
-        cy.get('td#3')
+        cy.get('button#3')
           .click()
 
-        cy.get('td#1')
+        cy.get('button#1')
           .click()
 
-        cy.get('td#2')
+        cy.get('button#2')
           .click()
 
-        cy.get('td#5')
+        cy.get('button#5')
           .click()
 
-        cy.get('td#4')
+        cy.get('button#4')
           .click()
 
-        cy.get('td#8')
+        cy.get('button#8')
           .click()
 
-        cy.get('td#7')
+        cy.get('button#7')
           .click()
 
-        cy.get('td#6')
+        cy.get('button#6')
           .click()
 
         cy.get('h1#status')
@@ -84,13 +84,13 @@ describe('The Home Page', function() {
         cy.get('h1#status')
           .should('have.text','Кто сейчас играет: X')
 
-        cy.get('td#0')
+        cy.get('button#0')
           .click()
 
         cy.get('h1#status')
           .should('have.text','Кто сейчас играет: O')
 
-        cy.get('td#1')
+        cy.get('button#1')
           .click()
 
         cy.get('h1#status')
